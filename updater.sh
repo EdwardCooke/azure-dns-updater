@@ -120,4 +120,4 @@ EOF
 
     curl -d "$BODY" -X PUT -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" https://management.azure.com/subscriptions/$SUBID/resourceGroups/$RG/providers/Microsoft.Network/dnsZones/$ZONE/A/$HOST?api-version=2018-05-01
     echo "Updated"
-done  
+done

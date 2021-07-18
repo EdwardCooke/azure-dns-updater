@@ -1,7 +1,5 @@
 FROM alpine
-#RUN apk add git curl bash
-RUN apt update && \
-    apt install -y git curl jq
+RUN apk add git curl bash jq
 WORKDIR /
 COPY updater.sh updater.sh
 RUN chmod +x updater.sh

@@ -1,7 +1,7 @@
-FROM debian
+FROM alpine
 #RUN apk add git curl bash
 RUN apt update && \
-    apt install -y git curl
+    apt install -y git curl jq
 WORKDIR /
 COPY updater.sh updater.sh
 RUN chmod +x updater.sh
